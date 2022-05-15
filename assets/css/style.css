@@ -10,7 +10,6 @@ body {
 
 ::-webkit-scrollbar-track{
     background-color: #000;
-    /* border-radius: 50px; */
 }
 
 ::-webkit-scrollbar-thumb{
@@ -105,7 +104,7 @@ button {
     margin-top: 0.8rem;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     display: none;
     text-decoration: none;
     width: 50%;
@@ -133,7 +132,7 @@ button {
 .menu-button-container {
     display: none;
     height: 100%;
-    width: 30px;
+    width: 2rem;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +167,7 @@ button {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top:0px;
+    margin-top:0;
     transform: rotate(-405deg);
 }
 
@@ -177,12 +176,11 @@ button {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top:0px;
+    margin-top:0;
     transform: rotate(405deg);
 }
 
 .showcase {
-    display: flex;
     margin: auto;
     width: 100%;
     margin: 0 auto;
@@ -247,7 +245,7 @@ button {
     position: absolute;
     left: 1rem;
     bottom: 0.5rem;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-shadow: 0 0 2px #000000;
 }
 
@@ -259,10 +257,6 @@ button {
     font-family: Impact;
     padding: 2rem;
     text-align: left;
-}
-
-.title-disc hr {
-    margin: 2rem 0rem;
 }
 
 .about {
@@ -318,7 +312,7 @@ button {
     text-align: left;
     color:#fff;
     padding: 0.5rem 0;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .newsletter input[type="submit"]{
@@ -384,6 +378,10 @@ input[type="submit"]:hover{
     .nav-left{
         display: flex;
         align-content: space-between;
+    }
+
+    .nav-right{
+        display: none;
     }
     
     .menu-button-container {
@@ -509,10 +507,4 @@ input[type="submit"]:hover{
         width: 100%;
         margin-top: 1rem;
     }
-}
-
-@media screen and (max-width: 657px){
-    .menu-button-container {
-    margin-top: 0.5rem;
-}
 }
