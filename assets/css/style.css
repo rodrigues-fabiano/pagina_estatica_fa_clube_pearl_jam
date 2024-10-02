@@ -181,15 +181,26 @@ button {
 }
 
 .showcase {
+    position: relative;
     margin: auto;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: top;
     background-color: #ac4c4c;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: auto;
 }
 
 .title {
+    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -199,6 +210,8 @@ button {
     line-height: 18rem;
     font-size: 19rem;
     color:#6a183d;
+    mix-blend-mode: multiply;
+    
 }
 
 .discography {
